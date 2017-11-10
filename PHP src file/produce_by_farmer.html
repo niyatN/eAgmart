@@ -1,0 +1,47 @@
+<html>
+<head>
+	<title>Produce Details</title>
+	<link rel="stylesheet" type="text/css" href="produce_by_farmer.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container">
+  <form action="produce_by_farmer.php" method="POST">
+    <div class="row">
+      <h4>Produce Details</h4>
+      <div class="input-group input-group-icon">
+        <input type="text" placeholder="Full Name" name="Full_name" />
+        <div class="input-icon"><i class="fa fa-user"></i></div>
+      </div>
+      <div class="input-group input-group-icon">
+        <input type="text" placeholder="Address" name="Contact" />
+        <div class="input-icon"><i class="fa fa-envelope"></i></div>
+      </div>
+      <div class="input-group input-group-icon">
+        <input type="text" placeholder="Pincode" name="Pincode"/>
+        <div class="input-icon"><i class="fa fa-key"></i></div>
+      </div>
+      <div class="input-group input-group-icon">
+        <input type="text" placeholder="Product" name="Product"/>
+        <div class="input-icon"><i class="fa fa-key"></i></div>
+      </div>
+      <div class="input-group input-group-icon">
+        <input type="text" placeholder="Quantity (In Kg)" name="Quantity" />
+        <div class="input-icon"><i class="fa fa-key"></i></div>
+      </div>
+      <div class="input-group input-group-icon">
+        <input type="text" placeholder="Crop Stage" name="Crop_Stage"/>
+        <div class="input-icon"><i class="fa fa-key"></i></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-half">
+        <h4>Date of Harvest</h4>
+        <input type="text" placeholder="yyyy-mm-dd" name="date_of_harvest" />
+      </div>
+    </div>
+    <input type="submit" name="submit" value="Submit Request" />
+  </form>
+</div>
+</body>
+</html>

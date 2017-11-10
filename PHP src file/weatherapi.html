@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var weather;
+		var City = 'London';
+		var apikey ='&appid=1e6a33b8ed858d01173d45234891f3b1';
+		var units='&units=metric'; 
+		var api='http://samples.openweathermap.org/data/2.5/weather?q=';
+		function weatherAsk(){
+			var url=api+City+apikey+units;
+			loadJSON(url,gotData);
+			
+		}
+		
+		function gotData(data){
+			weather=data;
+		}
+		function final(){
+			weatherAsk();
+			document.getElementById('temp').innerHTML=weather.main.temp;
+			console.log('p');
+
+		}
+	</script>
+</head>
+<body>
+<form onsubmit="final()">
+	<input type="text" name="city" id = "city" placeholder=" City" />
+	<input type="submit" name="submit" value="Submit" />
+</form>
+<h3 id = "temp"></h3>
+
+</body>
+</html>
+
